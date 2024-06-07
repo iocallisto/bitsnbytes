@@ -1,0 +1,271 @@
+<style>
+    #logo{
+        width:50px;
+        height: 50px;
+        margin-left: 0px;
+        position: absolute;
+    }
+
+    #hreff{
+        color: white;
+    }
+    #illuminate{
+        font-size: 25pt;
+        margin-left: 50px;
+        position: absolute;
+        margin-top: 0px;
+    }
+
+    li{
+        text-decoration: none;
+        position: absolute; 
+        display: inline-block;
+        padding: 5px;
+    }
+
+    li:hover{
+        background-color: rgb(118, 108, 255);
+        border-radius: 10px;
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: right;        
+    }
+    
+ #Github{
+        margin-right: 1%;
+    }
+    #Contact{
+        margin-right: 45%
+    }
+    #Register{
+        margin-right: 25%
+    }
+    #Schedule{
+        margin-right: 35%
+    }
+    #About{
+        margin-right: 55%;
+    }
+    #challenge{
+        margin-right: 10%
+    }
+
+   
+    #otherill{
+        width: 100%;}
+
+    #aboutill{
+        text-align: center;
+        position: absolute;
+        width: 50%;
+        margin-left: 0%;
+        top: 35%;
+        background-color: black;
+        border: 3px solid rgb(196, 101, 255);
+        box-shadow: 6px 6px 6px 6px rgb(196, 101, 255);
+        color: white;
+        border-radius: 25px;
+        animation-name: fadein;
+        animation-duration: 2s;
+        padding: 2.5%;
+    }
+
+    @keyframes fadein{
+        from{opacity:0;}
+        to{opacity:1;}
+    }
+    .aboutsection{
+        margin-top: 50px;
+        width: 50%;
+        margin-left: 25%;
+    }
+    #Githublink{
+        color: white;
+        text-decoration: none;
+    }
+    #challengelink{
+        text-decoration: none;
+        color: white;
+    }
+    .video{
+        position: absolute;
+        margin-right: 0px;
+        z-index: -1;
+        background-color: black;
+    }
+    .ribon {
+        color: white;
+        background-color: black;
+        height: 10%;
+        border: 1px solid white;
+        border-right: none;
+    }
+
+    .ribontext{
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        }
+
+    #backtotopref{
+        font-size: 10pt;
+        text-decoration: none;
+        display: inline-block;
+        color: white;
+ 
+    }
+    .merica{
+        width: 100%;
+    }
+    .merica p{
+        width: 28%;
+        margin:1.6%;
+        text-align: center;    }
+
+    #firstblock, #thirdblock, #backtotop{
+            padding: 1%;
+            background-color: rgb(255, 0, 0);
+            border-radius:  25px;
+            box-shadow: 5px 5px 5px rgb(131, 131, 198);
+        }
+    #secondblock, #codethestars, #mit{
+        padding: 1%;
+        background-color: blue;
+        border-radius: 25px;
+        box-shadow: 5px 5px 5px rgb(131, 131, 198);
+
+    }
+
+    .blocks{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 30%;
+        color: white;
+    }
+
+    #iwantyou{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .merica{
+        position: absolute;
+        top: 130%;
+        height: 100%;
+    }
+
+    .twist{
+        position: absolute;
+        top: 230%;
+        width: 100%;
+        /*background-color: rgb(24, 24, 24);*/
+        /*color: rgb(255, 255, 255);*/
+        text-align: center;
+    }
+
+    .people{
+        width: 100%;
+        margin: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .people p{
+        color: white;
+        text-align: center;
+        Width: 10%;
+        height: 5%;
+    }
+
+    
+    .people p a{
+        color: white;
+    }
+    #newprojects{
+        color: red;
+    }
+    #othersubmissions{
+        color: blue;
+    }
+    .one{
+        background-color: red;
+    }
+    .two{
+        background-color: blue;
+    }
+</style>
+<html><head><link rel="icon" type="image/png" href="download.png"></head><body>
+    <video autoplay loop muted plays-inline class="video" height="115%" >
+        <source src="videoplayback.mp4" type="video/mp4">
+    </video>
+    <audio autoplay loop><source src="music.mp4" type="video/mp4"></audio>
+    <div class="ribon"><div class="ribontext">
+    <nav>
+        <img src="illuminate.png" id="logo"><h2 id="illuminate">Illuminate</h2>
+        <ul class="list">
+            <div class="navbar"><li id="About" href="aboutill" onclick="about()">About</li>
+            <li id="Schedule" onclick="Schedule()"> Schedule</li>
+            <li id="Register" onclick="Register()">Register</li>
+            <li id="Contact" onclick="Contact()">Contact</li>
+            <li id="Github"><a href="https://github.com/Code-the-Stars/illuminate" id="Githublink">Github</a></li>
+        <li id="challenge"><a href="#iwantyou" id="challengelink">Challenge for you</a></li></div>
+            </ul>
+    </nav></div></div>
+<div class="aboutsection">    
+<img src="illuminate.png" id="otherill"> <p id="aboutill">Welcome to Illuminate, a virtual hackathon designed for high-schoolers to showcase their coding skills and creativity. Join us for an exciting weekend of coding challenges, workshops, and networking opportunities.</p></div>
+
+
+<div class="merica"><img src="iwantyou3.png" height="70%" width="70%" id="iwantyou">
+    <div class="blocks"><p  onmouseover="moveup(this)" onmouseout="movebackdown(this)" id="firstblock">Go to the <a id="githublink" href="https://github.com/Code-the-Stars/illuminate">Github</a></p>
+    <p id="secondblock" onmouseover="moveup(this)" onmouseout="movebackdown(this)">Make a fork of this repo, add a folder in the folder 'csschallenge', copy the starter code (code.md), and code! </p>
+    <p id="thirdblock" onmouseover="moveup(this)" onmouseout="movebackdown(this)">I need YOU to fix my goofy css!</p>
+    <p id="codethestars" onmouseover="moveup(this)" onmouseout="movebackdown(this)">@2024codethestars</p>
+    <p id="backtotop" onmouseover="moveup(this)" onmouseout="movebackdown(this)"><a href="#logo" id="backtotopref">(back to top)</a></p>
+    <p id="mit" onmouseover="moveup(this)" onmouseout="movebackdown(this)">This project falls under the MIT liscense</p></div></div>
+
+
+    <div class="twist"><h1 id="othersubmissions"> Other submissions </h1>
+        <h2 id="newprojects">Other people have also made some awesome projects! Check them out below!</h2>
+        <div class="people">
+        <p class="one" onmouseover="moveup(this)" onmouseout="movebackdown(this)"><a href="project0.html">project</a></p>
+            <p class="two" onmouseover="moveup(this)" onmouseout="movebackdown(this)"><a href="project1.html">project</a></p>
+            <p class="one" onmouseover="moveup(this)" onmouseout="movebackdown(this)"><a href="project2.html">project</a></p>
+            <p class="two" onmouseover="moveup(this)" onmouseout="movebackdown(this)"><a>other</a></p>
+            <p class="one"onmouseover="moveup(this)" onmouseout="movebackdown(this)"><a>other</a></p>
+            <p class="two" onmouseover="moveup(this)" onmouseout="movebackdown(this)"><a>other</a></p>
+            <p class="one" onmouseover="moveup(this)" onmouseout="movebackdown(this)"><a>other</a></p>
+        </div></div>
+
+</body></html>
+<script>
+    var text = document.getElementById("aboutill")
+    function about(){
+        document.getElementById("aboutill").innerHTML="Welcome to Illuminate, a virtual hackathon designed for high-schoolers to showcase their coding skills and creativity. Join us for an exciting weekend of coding challenges, workshops, and networking opportunities."
+    }
+    function Schedule(){
+        text.innerHTML= "Friday, 6:00 PM - Opening Ceremony Friday, 7:00 PM - Coding Challenge #1 Saturday, 10:00 AM - Workshop: Web Development Saturday, 1:00 PM - Coding Challenge #2 Sunday, 9:00 AM - Workshop: Mobile App Development Sunday, 12:00 PM - Closing Ceremony";}
+
+    function Register(){
+        text.innerHTML = "Click <a href='https://codethestars.fillout.com/illuminatesignup' id='hreff'>here</a> to register for the hackathon (June 7th). When you register, you will get a link to the discord where the hackathon will be hosted."
+    }
+    function Contact(){
+        text.innerHTML = "If you have any questions, contact me at <a href='mailto:shayan@codethestars.org' id='hreff'>Shayan@codethestars.org</a> or dm me in the discord!"
+    }
+    function moveup(block){
+        block.style.position = "relative"
+        block.style.bottom = "10px"
+    }
+    function movebackdown(block){
+        block.style.bottom = "0px"
+    }
+    function buttonchange(button){
+        button.style.backgroundColor="red";
+    }
+    function changeback(button){
+        button.style.backgroundColor="blue";
+        button.style.color="white";
+    }
+</script>
